@@ -9,19 +9,17 @@ In this repository we provide the code for reproducing the experiments performen
 ## Organization
 
 ```
-------------
-├── README.md		   					 <- README doc for reproducing experiments
-├── data_generator.py			   <- data generator and helper function to generate the different CA trajectories
-├── ca_unet.py						   <- the encoder-decoder neural network model
-├── training.py 					   <- the script for running the training (and testing) the network 
+├── README.md							<- README doc for reproducing experiments
+├── data_generator.py			<- data generator and helper function to generate the different CA trajectories
+├── ca_unet.py						<- the encoder-decoder neural network model
+├── training.py						<- the script for running the training (and testing) the network 
 ├── params
-		├── params_simple			   <- the parameters for the simple generalization case
-		├── params_level_1		   <- the parameters for the level 1 generalization case
-		├── params_level_2		   <- the parameters for the level 2 generalization case
-		├── params_level_3_extra <- the parameters for the level 3 extrapolation generalization case
-		├── params_level_3_inter <- the parameters for the level 3 interpolation generalization case
- ├── juwels_run.sh					 <- batch script to run the code on the JUWELS supercomputer at FZ Juelich
-------------
+	├── params_simple				<- the parameters for the simple generalization case
+	├── params_level_1			<- the parameters for the level 1 generalization case
+	├── params_level_2			<- the parameters for the level 2 generalization case
+	├── params_level_3_extra<- the parameters for the level 3 extrapolation generalization case
+	├── params_level_3_inter<- the parameters for the level 3 interpolation generalization case
+ ├── juwels_run.sh				<- batch script to run the code on the JUWELS supercomputer at FZ Juelich
 ```
 
 ## Installation
@@ -39,8 +37,6 @@ Run the training.py python file with one of the following flags:
 - inter: for the level 3 generalization using 3x3, 5x5 and 9x9 neighborhood in training but 7x7 in test set
 
 Other hyperparameters (like number of epochs or batch size) can be set in the corresponding parameter file in the params folder. 
-
-
 
 ## Citation
 
