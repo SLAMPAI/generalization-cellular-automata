@@ -12,4 +12,4 @@ module purge
 module use Stages/Devel-2020
 module load GCC/9.3.0
 module load TensorFlow/2.3.1-Python-3.8.5
-srun python training.py
+srun python run.py --gen_level simple
