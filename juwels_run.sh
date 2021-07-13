@@ -2,9 +2,9 @@
 #SBATCH --account=ACCOUNT
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:1
 #SBATCH --time=03:00:00
-#SBATCH --partition=develgpus
+#SBATCH --partition=PARTITION
 #SBATCH --output=out
 #SBATCH --error=err
 
