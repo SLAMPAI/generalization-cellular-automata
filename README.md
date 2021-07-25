@@ -13,6 +13,7 @@ In this repository we provide the code for reproducing the experiments performen
 ├── data_generator.py      <- data generator and helper function to generate the different CA trajectories
 ├── ca_unet.py	           <- the encoder-decoder neural network model
 ├── run.py                 <- the script for running the training (and testing) the network 
+├── requirements.txt       <- requirements file for running the script  
 ├── params
   ├── params_simple        <- the parameters for the simple generalization case
   ├── params_level_1       <- the parameters for the level 1 generalization case
